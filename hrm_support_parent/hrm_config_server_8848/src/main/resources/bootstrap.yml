@@ -6,10 +6,15 @@ spring:
   cloud:
     config:
       server:
-        git:
-          uri: https://github.com/hpyao/hrm_config.git
-          username: hpyao
-          password: Itsource20180731
+            native:
+              search-locations: C:/Users/asus/Desktop/hrm_config/hrm_config
+  profiles:
+    active: native
+#      server:
+#        git:
+#          uri: https://github.com/niko-lozq/hrm_config.git
+#          username: niko-lozq
+#          password: 942ai255
 eureka:
   client:
     service-url:

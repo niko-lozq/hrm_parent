@@ -10,6 +10,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>hrm_course_service_9002</artifactId>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
 
@@ -66,6 +78,23 @@
             <artifactId>springfox-swagger-ui</artifactId>
             <version>2.9.2</version>
         </dependency>
+
+        <!--内部调用es模块接口-->
+        <dependency>
+            <groupId>com.wgb</groupId>
+            <artifactId>hrm_basic_es_interface</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!--内部调用redis模块接口-->
+        <dependency>
+            <groupId>com.wgb</groupId>
+            <artifactId>hrm_basic_redis_client</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+
+
     </dependencies>
 
 </project>

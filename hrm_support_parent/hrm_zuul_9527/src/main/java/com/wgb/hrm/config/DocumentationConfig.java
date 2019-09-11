@@ -17,7 +17,12 @@ public class DocumentationConfig implements SwaggerResourcesProvider {
         //通过网关访问服务地址
         resources.add(swaggerResource("系统管理", "/services/sysmanage/v2/api-docs", "2.0"));
         resources.add(swaggerResource("系统管理1", "/services/sysmanage/v2/api-docs", "2.0"));
-        resources.add(swaggerResource("系统管理2", "/services/sysmanage/v2/api-docs", "2.0"));
+        resources.add(swaggerResource("分布式文件系统", "/services/fastdfs/v2/api-docs", "2.0"));
+        resources.add(swaggerResource("分布式全文检索", "/services/es/v2/api-docs", "2.0"));
+        resources.add(swaggerResource("中央缓存系统", "/services/redis/v2/api-docs", "2.0"));
+        resources.add(swaggerResource("页面管理系统", "/services/page/v2/api-docs", "2.0"));
+        resources.add(swaggerResource("页面代理系统", "/services/pageAgent/v2/api-docs", "2.0"));
+
         return resources;
     }
 
